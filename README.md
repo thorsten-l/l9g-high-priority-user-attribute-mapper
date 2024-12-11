@@ -10,3 +10,6 @@ The only difference is the priority is set to 90 instead of 0.
 ## Keycloak server
 - copy the `l9g-high-priority-user-attribute-mapper.jar` into `keycloak/providers` directory.
 - restart Keycloak
+
+## My Repository #100
+![Repository #100](100-512.png "Repository #100")
