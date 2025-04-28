@@ -12,7 +12,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <keycloak.version>26.2.1</keycloak.version>
     <keycloak.dist>quarkus</keycloak.dist>
-    <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.release>21</maven.compiler.release>
   </properties>
     
   <dependencyManagement>
@@ -47,6 +47,20 @@
 
   <build>
     <finalName>l9g-high-priority-user-attribute-mapper</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.14.0</version>
+        <configuration>
+          <release>${maven.compiler.release}</release>
+          <compilerArgs>
+            <arg>-Xlint:-options</arg>
+            <arg>-proc:none</arg>
+          </compilerArgs>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 
 </project>
