@@ -26,7 +26,7 @@ public class L9gUserAttributeMapper extends UserAttributeMapper
   @Override
   public String getId()
   {
-    return "l9g-oidc-usermodel-attribute-mapper";
+    return "l9g-high-priority-user-attribute-mapper";
   }
 
   @Override
